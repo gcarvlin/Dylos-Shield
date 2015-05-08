@@ -1,0 +1,13 @@
+Connect Arduino to your network
+Upload Arduino code with correct Dylos name
+Edit CAU1.py and upload.py to have the correct url and username/pass
+Place CAU.sh, CAU1.py, cronFiveMin_v2.txt, and upload.py in /root
+Place cacert4.pem in /etc/ssl/certs
+Place ipFinder.lua in /usr/bin
+If first time uploading to this arduino then connect via putty and run the following commands:
+	crond
+	crontab /root/cronFiveMin_v2.txt
+If you want to reload the cron file:
+	crontab -reload
+	crontab /root/cronFiveMin_v2.txt
+Connect Dylos shield and run diagnostics
